@@ -20,28 +20,43 @@ numberDogs = 0
 # EXAMPLE: print the result of the comparison: is number_seachers greater than number_students?
 puts "Is number_teachers greater than number_students?", number_teachers > number_students
 # this should print: "Is numberTeachers greater than numberStudents?" false
+puts "EXAMPLE  ------ should be false"
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
 # this should print: true
+puts "is number_teachers less than number_students?", number_teachers < number_students
+puts "------ should be true"
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
 # this should print: false
+puts "is number_teachers equal to string_teachers?", number_teachers == string_teachers
+puts "------ should be false"
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
 # this should print: true
+puts "is number_teachers not equal to number_students?", number_teachers != number_students
+puts "------ should be true"
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
 # this should print: true
+puts "is number_students greater than or equal to 20?", number_students >= 20
+puts "------ should be true"
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
 # this should print: false
+puts "is number_students greater than or equal to 21?", number_students >= 21
+puts "------ should be false"
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
 # this should print: true
+puts "is number_students less than or equal to 20?", number_students <= 20
+puts "------ should be true"
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
 # this should print: true
-
+puts "is number_students less than or equal to 21?", number_students <= 21
+puts "------ should be true"
+puts "____________________________________"
 
 #-------------------
 # PART 2: Articulating what you are doing
@@ -53,23 +68,36 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # Make sure YOU can explain it that way!
 
 puts 4 < 9
-#YOU DO: Explain.
+# Use the "less than" logical operator to compare 2 integers, "4" and "9".
+# Asking is 4 less than 9.
+# Print to the screen the results of that operation. Should print "true"
 
 books = 3
 puts 4 < books
-# YOU DO: Explain.
+# Create the variable "books" and assign to it the integer "3".
+# Use the "less than" logical operator to compare 2 integers, "4" and the number stored in the variable.
+# Asking is 4 less than 3.
+# Should print "false"
 
 friends = 6
 siblings = 2
 puts friends > siblings
-# YOU DO: Explain.
+# Create a variable "friends" and assign to it the integer "6".
+# Create a variable "siblings" and assign to it the integer "2".
+# Use the "greater than" logical operator to compare the values stored in those two variables.
+# Asking is 6 greater than 2.
+# Should print "true"
 
 attendees = 9
 meals = 8
 puts attendees != meals
-# YOU DO: Explain.
+# Create a variable "attendees" and assign to it the integer "9".
+# Create a variable "meals" and assign to it the integer "8".
+# Use the "not equal" logical operator to compare the values stored in those two variables.
+# Asking if the number of attendees is not equal to the number of meals.
+# Should print "true"
 
-
+puts "----------------------------------------"
 #-------------------
 # PART 3: Logical Operators
 #-------------------
@@ -90,15 +118,22 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
+puts loves_to_play && loves_treats
+puts "------ should be true"
 
 
 # Determine if the dog loves to play and loves the dog park
+puts loves_to_play && loves_dog_park
+puts "------ should be false"
 
 
 # Determine if the dog loves to play or loves the dog park
+puts loves_to_play || loves_dog_park
+puts "------ should be true"
 
 
 # Determine if the dog loves to play and is a puppy
+puts loves_to_play && is_a_puppy
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: The final line did not evaluate at all (refered to as NULL I think). No variable refering to a puppy exists.
